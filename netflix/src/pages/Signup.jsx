@@ -6,14 +6,14 @@ const Signup = () => {
 
     const [email, setEmail] = React.useState('')
     const [password, setPassword] = React.useState('')
-    const {user, signIn} = UserAuth()
+    const {user, signUp} = UserAuth()
 
     const navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            await signIn(email, password)
+            await signUp(email, password)
             navigate('/')
         } catch (error) {
             console.log(error)

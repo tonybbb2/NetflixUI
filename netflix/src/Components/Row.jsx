@@ -25,7 +25,7 @@ const Row = ({ title, fetchURL, rowId }) => {
         const slider = document.getElementById('slider' + rowId);
         slider.scrollLeft += slider.offsetWidth;
     }
-
+ 
 
     return (
         <>
